@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add User</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h3>My Lists</h3>
+        </header>
+        <div class="table-wrab">
+            <table class="table-users">
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Phone Number</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>Mohamud</td>
+                    <td>Eslan</td>
+                    <td>072778836</td>
+                    <td>dalsor@gmail.com</td>
+                    <td><button class="btn btn-edit">Edit</button></td>
+                    <td><button class="btn btn-delete">Delete</button></td>
+                </tr>
+            </table>
+            <button class="btn btn-adduser" id="btn-1">Add User</button>
+        </div>
+        <div class="add-modal modal-wrapper">
+            <div class="modal">
+                <div class="modal-header"><h3>Add New User</h3> </div>
+                <div class="modal-body">
+                    <form class="form" autocomplete="off">
+                        <input type="text" name="first name" placeholder="First Name">
+                        <input type="text" name="Last name" placeholder="Last Name">
+                        <input type="number" name="Phone" placeholder="Phone Number">
+                        <input type="text" name="Email" placeholder="Email">
+                        <button class="btn btn-modal">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    
+    <script src="config.js"></script>    
+    <script src="script.js"></script>
+</body>
+</html>
